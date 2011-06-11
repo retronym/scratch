@@ -1,0 +1,976 @@
+[info] Building project scalaz 6.0.2-SNAPSHOT against Scala 2.8.1
+[info]    using ScalazProject with sbt 0.7.7 and Scala 2.7.7
+[info] 
+[info] == scalaz-core / clean src_managed ==
+[info] Deleting directory /Users/jason/code/scalaz/core/src_managed/main/scala
+[info] == scalaz-core / clean src_managed ==
+[info] 
+[info] == scalaz-core / generate-tuple-w ==
+[info] == scalaz-core / generate-tuple-w ==
+[info] 
+[info] == scalaz-core / compile ==
+[info]   Source analysis: 120 new/modified, 0 indirectly invalidated, 0 removed.
+[info] Compiling main sources...
+Enabling statistics, measuring overhead = 80.8ns to 639.5ns per timer
+[info] *** Cumulative statistics at phase parser
+[info] #created tree nodes  : 162203
+[info] #created tree nodes by type: List()
+[info] *** Cumulative statistics at phase typer
+[info] #created tree nodes  : 434409
+[info] #created tree nodes by type: List()
+[info] #retained nodes          : 126361
+[info] #retained nodes by type  : List(TypeTree: 30826, Select: 18077, Ident: 15272, Apply: 9141, ValDef: 7113, : 7042, TypeDef: 5826, TypeApply: 5670, DefDef: 5505, This: 5221, Block: 2567, Literal: 2045, ApplyToImplicitArgs: 1830, Function: 1408, Template: 1210, Bind: 1044, ClassDef: 1033, New: 1031, Super: 952, ApplyImplicitView: 915, CaseDef: 896, Match: 416, Import: 306, If: 255, ModuleDef: 177, Typed: 154, PackageDef: 127, Throw: 102, UnApply: 77, Assign: 37, AppliedTypeTree: 36, LabelDef: 28, Try: 18, Return: 4)
+[info] #typechecked identifiers : 64802
+[info] #typechecked selections  : 58959
+[info] #typechecked applications: 13838
+[info] #raw type creations      : 7239915
+[info]   of which in failed     : 4963 (0.1%)
+[info]   of which in implicits  : 5795302 (80.0%)
+[info] #unique types            : 398202
+[info] #symbols                 : 393005
+[info]   of which type symbols  : 147425
+[info]   of which class symbols : 43895
+[info] #base type seqs          : 38692
+[info] avg base type seq length : 6.1250386
+[info] #singleton base type seqs: 0
+[info] #compound base type seqs : 9783
+[info] #typeref base type seqs  : 25891
+[info] #findMember ops          : 467983
+[info]   of which in failed     : 2302 (0.5%)
+[info]   of which in implicits  : 126655 (27.1%)
+[info] #notfound member         : 306465
+[info] #multiple member         : 2389
+[info] #asSeenFrom ops          : 597532
+[info] #subtype                 : 2228300
+[info]   of which in failed     : 2210 (0.1%)
+[info]   of which in implicits  : 1946262 (87.3%)
+[info]   of which in app impl   : 1903537 (85.4%)
+[info]   of which in improv     : 13716 (0.6%)
+[info] #sametype                : 65377
+[info] ms type-flow-analysis: 0
+[info] time spent typechecking  : 1 spans, 37626336000ns (100.0%)
+[info] time classfilereading    : 333 spans, 1237859000ns (3.3%)
+[info] time spent in implicits  : 4922 spans, 23742815000ns (63.1%)
+[info]     successful in scope  : 3727 spans, 14612813000ns (38.8%)
+[info]         failed in scope  : 3655 spans, 10996682000ns (29.2%)
+[info]      successful of type  : 1495 spans, 7000510000ns (18.6%)
+[info]          failed of type  : 2088 spans, 4540566000ns (12.1%)
+[info]        assembling parts  : 1433 spans, 964542000ns (2.6%)
+[info]               matchesPT  : 268964 spans, 4470342000ns (11.9%)
+[info] implicit cache hits      : 953 (39.9%)
+[info] time spent in failed     : 9316 spans, 96143000ns (0.3%)
+[info]        failed apply      : 8499 spans, 0ns (0.0%)
+[info]        failed op=        : 6924 spans, 44366000ns (0.1%)
+[info] micros by tree node      : List(Apply: 12106326, Select: 11294355, Ident: 3731940, TypeApply: 3564232, DefDef: 1337076, AppliedTypeTree: 1328518, Block: 887709, ClassDef: 674268, SelectFromTypeTree: 373719, ApplyToImplicitArgs: 371939, Function: 263630, If: 231687, Match: 194386, ModuleDef: 187182, TypeBoundsTree: 178213, Literal: 160237, CompoundTypeTree: 136369, Typed: 113511, ApplyImplicitView: 111811, TypeDef: 68079, ValDef: 64108, New: 54232, This: 42073, PackageDef: 35836, TypeTree: 30041, Super: 23940, Bind: 14831, ExistentialTypeTree: 8080, Throw: 5624, SingletonTypeTree: 3954, Try: 3705, Annotated: 2731, AssignOrNamedArg: 2708, LabelDef: 1800, Assign: 1280, : 355, Return: 173)
+[info] #visits by tree node     : List(Select: 74887, Ident: 72634, AppliedTypeTree: 19432, TypeBoundsTree: 12640, TypeTree: 12130, Apply: 11387, DefDef: 5851, Block: 4868, Literal: 4494, TypeApply: 3077, ApplyToImplicitArgs: 2490, Function: 2080, This: 2012, ApplyImplicitView: 1784, SelectFromTypeTree: 1222, CompoundTypeTree: 1126, New: 1103, Bind: 1045, ClassDef: 1033, ValDef: 989, Super: 952, TypeDef: 694, Match: 505, Typed: 386, If: 258, AssignOrNamedArg: 192, ModuleDef: 177, : 161, PackageDef: 127, Throw: 106, Assign: 49, ExistentialTypeTree: 41, Annotated: 29, LabelDef: 28, SingletonTypeTree: 26, Try: 18, Return: 4)
+[info] avg micros by tree node  : List(TypeApply: 1158, Apply: 1063, ModuleDef: 1057, If: 898, ClassDef: 652, Match: 384, SelectFromTypeTree: 305, Typed: 294, PackageDef: 282, DefDef: 228, Try: 205, ExistentialTypeTree: 197, Block: 182, SingletonTypeTree: 152, Select: 150, ApplyToImplicitArgs: 149, Function: 126, CompoundTypeTree: 121, TypeDef: 98, Annotated: 94, AppliedTypeTree: 68, ValDef: 64, LabelDef: 64, ApplyImplicitView: 62, Throw: 53, Ident: 51, New: 49, Return: 43, Literal: 35, Assign: 26, Super: 25, This: 20, Bind: 14, TypeBoundsTree: 14, AssignOrNamedArg: 14, TypeTree: 2, : 2)
+[info] time spent in <:<        : 2228300 spans, 6171839000ns (16.4%)
+[info] time spent in findmember : 467982 spans, 3317172000ns (8.8%)
+[info] time spent in asSeenFrom : 597532 spans, 4534175000ns (12.1%)
+[info] #implicit searches       : 4922
+[info] #tried, plausible, matching, typed, found implicits: 1220324, 265362, 5030, 4466, 3453
+[info] #implicit improves tests : 3774
+[info] #implicit inscope hits   : 2533
+[info] #implicit oftype hits    : 602
+[info] #ctr1                    : 1067521
+[info] #ctr2                    : 90605
+[info] #ctr3                    : 989862
+[info] #ctr4                    : 895347
+[info] #counter1                : 0 (0.0%)
+[info] #counter2                : 0 (0.0%)
+[info] #timer1                  : 0 spans, 0ns
+[info] #timer2                  : 0 spans, 0ns
+[info] *** Cumulative statistics at phase erasure
+[info] #created tree nodes  : 918996
+[info] #created tree nodes by type: List()
+[info] #retained nodes          : 253454
+[info] #retained nodes by type  : List(TypeTree: 55534, Select: 38471, Apply: 28148, ValDef: 18471, Ident: 18161, DefDef: 17929, : 16570, This: 14052, Block: 10352, Literal: 5338, New: 5143, TypeApply: 4501, Template: 4430, ClassDef: 4430, Super: 4007, Typed: 3169, ApplyToImplicitArgs: 1829, If: 1096, ApplyImplicitView: 912, Throw: 436, PackageDef: 127, CaseDef: 79, Assign: 75, ArrayValue: 71, LabelDef: 68, Match: 19, Try: 18, Bind: 14, Return: 4)
+[info] #typechecked identifiers : 82269
+[info] #typechecked selections  : 99158
+[info] #typechecked applications: 55225
+[info] #raw type creations      : 9447511
+[info]   of which in failed     : 4963 (0.1%)
+[info]   of which in implicits  : 5795302 (61.3%)
+[info] #unique types            : 436289
+[info] #symbols                 : 606161
+[info]   of which type symbols  : 165090
+[info]   of which class symbols : 51034
+[info] #base type seqs          : 67332
+[info] avg base type seq length : 5.7474604
+[info] #singleton base type seqs: 0
+[info] #compound base type seqs : 28193
+[info] #typeref base type seqs  : 34479
+[info] #findMember ops          : 637495
+[info]   of which in failed     : 2302 (0.4%)
+[info]   of which in implicits  : 126655 (19.9%)
+[info] #notfound member         : 330516
+[info] #multiple member         : 37356
+[info] #asSeenFrom ops          : 777361
+[info] #subtype                 : 2843130
+[info]   of which in failed     : 2210 (0.1%)
+[info]   of which in implicits  : 1946262 (68.5%)
+[info]   of which in app impl   : 1903537 (67.0%)
+[info]   of which in improv     : 13716 (0.5%)
+[info] #sametype                : 210682
+[info] ms type-flow-analysis: 0
+[info] #ctr1                    : 1192227
+[info] #ctr2                    : 99808
+[info] #ctr3                    : 1054290
+[info] #ctr4                    : 927299
+[info] #counter1                : 0 (0.0%)
+[info] #counter2                : 0 (0.0%)
+[info] #timer1                  : 0 spans, 0ns
+[info] #timer2                  : 0 spans, 0ns
+[info] *** Cumulative statistics at phase cleanup
+[info] #created tree nodes  : 1112595
+[info] #created tree nodes by type: List()
+[info] #retained nodes          : 340315
+[info] #retained nodes by type  : List(TypeTree: 66191, Select: 56310, Apply: 34360, Ident: 34065, ValDef: 27908, : 26319, This: 20866, DefDef: 18887, Block: 9640, Literal: 7061, New: 6606, Assign: 4634, Template: 4430, ClassDef: 4430, Super: 4007, TypeApply: 3852, Typed: 3169, If: 2593, Throw: 1850, ApplyToImplicitArgs: 1825, ApplyImplicitView: 912, PackageDef: 127, CaseDef: 79, ArrayValue: 71, LabelDef: 68, Match: 19, Try: 18, Bind: 14, Return: 4)
+[info] #typechecked identifiers : 92056
+[info] #typechecked selections  : 112352
+[info] #typechecked applications: 62839
+[info] #raw type creations      : 9839373
+[info]   of which in failed     : 4963 (0.1%)
+[info]   of which in implicits  : 5795302 (58.9%)
+[info] #unique types            : 455769
+[info] #symbols                 : 658587
+[info]   of which type symbols  : 169357
+[info]   of which class symbols : 51198
+[info] #base type seqs          : 73695
+[info] avg base type seq length : 5.4932494
+[info] #singleton base type seqs: 0
+[info] #compound base type seqs : 31824
+[info] #typeref base type seqs  : 37211
+[info] #findMember ops          : 672807
+[info]   of which in failed     : 2302 (0.3%)
+[info]   of which in implicits  : 126655 (18.8%)
+[info] #notfound member         : 340350
+[info] #multiple member         : 48300
+[info] #asSeenFrom ops          : 781739
+[info] #subtype                 : 2968194
+[info]   of which in failed     : 2210 (0.1%)
+[info]   of which in implicits  : 1946262 (65.6%)
+[info]   of which in app impl   : 1903537 (64.1%)
+[info]   of which in improv     : 13716 (0.5%)
+[info] #sametype                : 219397
+[info] ms type-flow-analysis: 0
+[info] #ctr1                    : 1210353
+[info] #ctr2                    : 100032
+[info] #ctr3                    : 1063080
+[info] #ctr4                    : 935863
+[info] #counter1                : 0 (0.0%)
+[info] #counter2                : 0 (0.0%)
+[info] #timer1                  : 0 spans, 0ns
+[info] #timer2                  : 0 spans, 0ns
+[info] Compilation successful.
+[info]   Post-analysis: 4440 classes.
+[info] == scalaz-core / compile ==
+[info] 
+[info] == scalaz-geo / compile ==
+[info]   Source analysis: 15 new/modified, 0 indirectly invalidated, 0 removed.
+[info] Compiling main sources...
+[info] *** Cumulative statistics at phase parser
+[info] #created tree nodes  : 4010
+[info] #created tree nodes by type: List()
+[info] *** Cumulative statistics at phase typer
+[info] #created tree nodes  : 10255
+[info] #created tree nodes by type: List()
+[info] #retained nodes          : 5059
+[info] #retained nodes by type  : List(Select: 1031, TypeTree: 945, Ident: 673, Apply: 482, ValDef: 293, This: 253, DefDef: 244, Literal: 222, : 201, TypeApply: 127, Block: 81, ApplyToImplicitArgs: 74, Template: 64, Function: 56, ClassDef: 46, ApplyImplicitView: 38, Super: 35, PackageDef: 30, Typed: 26, New: 24, Import: 23, CaseDef: 22, ModuleDef: 18, Bind: 17, Match: 11, If: 11, TypeDef: 7, Throw: 5)
+[info] #typechecked identifiers : 93323
+[info] #typechecked selections  : 113343
+[info] #typechecked applications: 63478
+[info] #raw type creations      : 10205485
+[info]   of which in failed     : 4963 (0.0%)
+[info]   of which in implicits  : 5955730 (58.4%)
+[info] #unique types            : 10816
+[info] #symbols                 : 52367
+[info]   of which type symbols  : 192537
+[info]   of which class symbols : 68164
+[info] #base type seqs          : 80347
+[info] avg base type seq length : 5.519845
+[info] #singleton base type seqs: 0
+[info] #compound base type seqs : 37087
+[info] #typeref base type seqs  : 38530
+[info] #findMember ops          : 694519
+[info]   of which in failed     : 2302 (0.3%)
+[info]   of which in implicits  : 133784 (19.3%)
+[info] #notfound member         : 352207
+[info] #multiple member         : 49278
+[info] #asSeenFrom ops          : 800176
+[info] #subtype                 : 3060422
+[info]   of which in failed     : 2210 (0.1%)
+[info]   of which in implicits  : 1991913 (65.1%)
+[info]   of which in app impl   : 1949173 (63.7%)
+[info]   of which in improv     : 13796 (0.5%)
+[info] #sametype                : 225973
+[info] ms type-flow-analysis: 0
+[info] time spent typechecking  : 2 spans, 40116814000ns (100.0%)
+[info] time classfilereading    : 698 spans, 2087792000ns (5.2%)
+[info] time spent in implicits  : 5096 spans, 25037244000ns (62.4%)
+[info]     successful in scope  : 3833 spans, 14793480000ns (36.9%)
+[info]         failed in scope  : 3810 spans, 11448889000ns (28.5%)
+[info]      successful of type  : 1615 spans, 7667900000ns (19.1%)
+[info]          failed of type  : 2172 spans, 4548191000ns (11.3%)
+[info]        assembling parts  : 1501 spans, 988799000ns (2.5%)
+[info]               matchesPT  : 277665 spans, 4612041000ns (11.5%)
+[info] implicit cache hits      : 1021 (40.5%)
+[info] time spent in failed     : 34337 spans, 96143000ns (0.2%)
+[info]        failed apply      : 33490 spans, 0ns (0.0%)
+[info]        failed op=        : 31744 spans, 44366000ns (0.1%)
+[info] micros by tree node      : List(Apply: 15294108, Select: 13960096, Ident: 4591941, TypeApply: 3864185, DefDef: 2989344, ClassDef: 1933637, AppliedTypeTree: 1759385, Block: 1411848, ApplyToImplicitArgs: 458791, If: 441255, PackageDef: 420438, SelectFromTypeTree: 373719, Function: 345403, Literal: 311171, This: 281351, TypeTree: 260101, New: 246475, ValDef: 207624, Match: 205022, ModuleDef: 193879, TypeBoundsTree: 179202, Typed: 171980, ApplyImplicitView: 145519, CompoundTypeTree: 136369, Super: 104451, TypeDef: 68079, Assign: 64336, Throw: 31846, Bind: 15489, Try: 13930, LabelDef: 11072, ExistentialTypeTree: 8080, ArrayValue: 5031, SingletonTypeTree: 3954, : 3671, Annotated: 3301, SelectFromArray: 3182, AssignOrNamedArg: 2708, Return: 269)
+[info] #visits by tree node     : List(Select: 158683, Ident: 116743, TypeTree: 109597, Apply: 70748, This: 41278, Block: 38046, DefDef: 36873, Literal: 23149, AppliedTypeTree: 19576, ValDef: 14580, TypeBoundsTree: 12654, New: 11621, TypeApply: 9108, ClassDef: 8565, Super: 8488, Typed: 6728, Assign: 6192, ApplyToImplicitArgs: 6088, If: 5010, Function: 3842, ApplyImplicitView: 3634, : 2592, Throw: 2410, LabelDef: 1432, SelectFromTypeTree: 1222, CompoundTypeTree: 1126, Bind: 1097, Match: 703, TypeDef: 694, PackageDef: 284, ModuleDef: 195, AssignOrNamedArg: 192, ArrayValue: 142, Try: 62, Annotated: 41, ExistentialTypeTree: 41, SingletonTypeTree: 26, SelectFromArray: 8, Return: 8)
+[info] avg micros by tree node  : List(PackageDef: 1480, ModuleDef: 994, TypeApply: 424, SelectFromArray: 397, SelectFromTypeTree: 305, Match: 291, ClassDef: 225, Try: 224, Apply: 216, ExistentialTypeTree: 197, SingletonTypeTree: 152, CompoundTypeTree: 121, TypeDef: 98, AppliedTypeTree: 89, Function: 89, If: 88, Select: 87, DefDef: 81, Annotated: 80, ApplyToImplicitArgs: 75, ApplyImplicitView: 40, Ident: 39, Block: 37, ArrayValue: 35, Return: 33, Typed: 25, New: 21, Bind: 14, ValDef: 14, TypeBoundsTree: 14, AssignOrNamedArg: 14, Throw: 13, Literal: 13, Super: 12, Assign: 10, LabelDef: 7, This: 6, TypeTree: 2, : 1)
+[info] time spent in <:<        : 3060422 spans, 7438210000ns (18.5%)
+[info] time spent in findmember : 694518 spans, 5847983000ns (14.6%)
+[info] time spent in asSeenFrom : 800176 spans, 6519696000ns (16.3%)
+[info] #implicit searches       : 5096
+[info] #tried, plausible, matching, typed, found implicits: 1263739, 273908, 5298, 4734, 3605
+[info] #implicit improves tests : 3936
+[info] #implicit inscope hits   : 2571
+[info] #implicit oftype hits    : 706
+[info] #ctr1                    : 1251853
+[info] #ctr2                    : 101860
+[info] #ctr3                    : 1086927
+[info] #ctr4                    : 957569
+[info] #counter1                : 0 (0.0%)
+[info] #counter2                : 0 (0.0%)
+[info] #timer1                  : 0 spans, 0ns
+[info] #timer2                  : 0 spans, 0ns
+[info] *** Cumulative statistics at phase erasure
+[info] #created tree nodes  : 25037
+[info] #created tree nodes by type: List()
+[info] #retained nodes          : 8800
+[info] #retained nodes by type  : List(TypeTree: 1706, Select: 1607, Apply: 1178, Ident: 790, DefDef: 571, ValDef: 529, : 461, This: 444, Literal: 308, Block: 267, Template: 154, ClassDef: 154, New: 127, TypeApply: 109, Super: 105, Typed: 95, ApplyToImplicitArgs: 74, ApplyImplicitView: 38, PackageDef: 30, If: 24, CaseDef: 11, Throw: 9, Assign: 7, Match: 2)
+[info] #typechecked identifiers : 94029
+[info] #typechecked selections  : 114780
+[info] #typechecked applications: 64918
+[info] #raw type creations      : 10278276
+[info]   of which in failed     : 4963 (0.0%)
+[info]   of which in implicits  : 5955730 (57.9%)
+[info] #unique types            : 15856
+[info] #symbols                 : 73049
+[info]   of which type symbols  : 200749
+[info]   of which class symbols : 69787
+[info] #base type seqs          : 81708
+[info] avg base type seq length : 5.5053973
+[info] #singleton base type seqs: 0
+[info] #compound base type seqs : 37951
+[info] #typeref base type seqs  : 39013
+[info] #findMember ops          : 702829
+[info]   of which in failed     : 2302 (0.3%)
+[info]   of which in implicits  : 133784 (19.0%)
+[info] #notfound member         : 353094
+[info] #multiple member         : 50686
+[info] #asSeenFrom ops          : 803923
+[info] #subtype                 : 3078344
+[info]   of which in failed     : 2210 (0.1%)
+[info]   of which in implicits  : 1991913 (64.7%)
+[info]   of which in app impl   : 1949173 (63.3%)
+[info]   of which in improv     : 13796 (0.4%)
+[info] #sametype                : 231210
+[info] ms type-flow-analysis: 0
+[info] #ctr1                    : 1255441
+[info] #ctr2                    : 102166
+[info] #ctr3                    : 1088725
+[info] #ctr4                    : 959023
+[info] #counter1                : 0 (0.0%)
+[info] #counter2                : 0 (0.0%)
+[info] #timer1                  : 0 spans, 0ns
+[info] #timer2                  : 0 spans, 0ns
+[info] *** Cumulative statistics at phase cleanup
+[info] #created tree nodes  : 31515
+[info] #created tree nodes by type: List()
+[info] #retained nodes          : 11392
+[info] #retained nodes by type  : List(Select: 2338, TypeTree: 1886, Apply: 1359, Ident: 1149, ValDef: 753, : 750, This: 667, DefDef: 590, Literal: 455, Block: 326, Template: 154, ClassDef: 154, New: 143, Assign: 128, Super: 105, Typed: 95, TypeApply: 92, ApplyToImplicitArgs: 74, If: 73, ApplyImplicitView: 38, PackageDef: 30, Throw: 20, CaseDef: 11, Match: 2)
+[info] #typechecked identifiers : 94140
+[info] #typechecked selections  : 115208
+[info] #typechecked applications: 65159
+[info] #raw type creations      : 10290705
+[info]   of which in failed     : 4963 (0.0%)
+[info]   of which in implicits  : 5955730 (57.9%)
+[info] #unique types            : 16311
+[info] #symbols                 : 75096
+[info]   of which type symbols  : 200813
+[info]   of which class symbols : 69791
+[info] #base type seqs          : 82114
+[info] avg base type seq length : 5.491536
+[info] #singleton base type seqs: 0
+[info] #compound base type seqs : 38200
+[info] #typeref base type seqs  : 39170
+[info] #findMember ops          : 705187
+[info]   of which in failed     : 2302 (0.3%)
+[info]   of which in implicits  : 133784 (19.0%)
+[info] #notfound member         : 354469
+[info] #multiple member         : 51094
+[info] #asSeenFrom ops          : 804075
+[info] #subtype                 : 3083941
+[info]   of which in failed     : 2210 (0.1%)
+[info]   of which in implicits  : 1991913 (64.6%)
+[info]   of which in app impl   : 1949173 (63.2%)
+[info]   of which in improv     : 13796 (0.4%)
+[info] #sametype                : 231787
+[info] ms type-flow-analysis: 0
+[info] #ctr1                    : 1256198
+[info] #ctr2                    : 102241
+[info] #ctr3                    : 1089335
+[info] #ctr4                    : 959558
+[info] #counter1                : 0 (0.0%)
+[info] #counter2                : 0 (0.0%)
+[info] #timer1                  : 0 spans, 0ns
+[info] #timer2                  : 0 spans, 0ns
+[info] Compilation successful.
+[info]   Post-analysis: 155 classes.
+[info] == scalaz-geo / compile ==
+[info] 
+[info] == scalaz-scalacheck-binding / compile ==
+[info]   Source analysis: 3 new/modified, 0 indirectly invalidated, 0 removed.
+[info] Compiling main sources...
+[info] *** Cumulative statistics at phase parser
+[info] #created tree nodes  : 4360
+[info] #created tree nodes by type: List()
+[info] *** Cumulative statistics at phase typer
+[info] #created tree nodes  : 16101
+[info] #created tree nodes by type: List()
+[info] #retained nodes          : 5117
+[info] #retained nodes by type  : List(Select: 1136, TypeTree: 1036, Ident: 491, TypeApply: 391, This: 374, Apply: 285, ValDef: 271, : 264, ApplyToImplicitArgs: 211, ApplyImplicitView: 111, Function: 109, DefDef: 98, TypeDef: 95, Block: 78, Literal: 44, Template: 20, Super: 19, Import: 17, Typed: 15, New: 11, ModuleDef: 10, ClassDef: 10, CaseDef: 6, PackageDef: 6, Match: 3, Bind: 3, Try: 2, Return: 1)
+[info] #typechecked identifiers : 95961
+[info] #typechecked selections  : 116999
+[info] #typechecked applications: 66096
+[info] #raw type creations      : 11109811
+[info]   of which in failed     : 4966 (0.0%)
+[info]   of which in implicits  : 6646795 (59.8%)
+[info] #unique types            : 48002
+[info] #symbols                 : 96173
+[info]   of which type symbols  : 236211
+[info]   of which class symbols : 90999
+[info] #base type seqs          : 87496
+[info] avg base type seq length : 5.550185
+[info] #singleton base type seqs: 0
+[info] #compound base type seqs : 39977
+[info] #typeref base type seqs  : 42201
+[info] #findMember ops          : 734729
+[info]   of which in failed     : 2315 (0.3%)
+[info]   of which in implicits  : 151807 (20.7%)
+[info] #notfound member         : 371004
+[info] #multiple member         : 51331
+[info] #asSeenFrom ops          : 874412
+[info] #subtype                 : 3352615
+[info]   of which in failed     : 2211 (0.1%)
+[info]   of which in implicits  : 2251022 (67.1%)
+[info]   of which in app impl   : 2207222 (65.8%)
+[info]   of which in improv     : 13964 (0.4%)
+[info] #sametype                : 238395
+[info] ms type-flow-analysis: 0
+[info] time spent typechecking  : 3 spans, 43946449000ns (100.0%)
+[info] time classfilereading    : 1224 spans, 3349931000ns (7.6%)
+[info] time spent in implicits  : 5827 spans, 27742708000ns (63.1%)
+[info]     successful in scope  : 4380 spans, 16205279000ns (36.9%)
+[info]         failed in scope  : 4360 spans, 12458100000ns (28.3%)
+[info]      successful of type  : 1857 spans, 8067426000ns (18.4%)
+[info]          failed of type  : 2482 spans, 4660390000ns (10.6%)
+[info]        assembling parts  : 1823 spans, 1056896000ns (2.4%)
+[info]               matchesPT  : 316964 spans, 5156273000ns (11.7%)
+[info] implicit cache hits      : 1067 (36.9%)
+[info] time spent in failed     : 35778 spans, 96754000ns (0.2%)
+[info]        failed apply      : 34880 spans, 0ns (0.0%)
+[info]        failed op=        : 33053 spans, 44366000ns (0.1%)
+[info] micros by tree node      : List(Apply: 16375860, Select: 15579085, Ident: 4746546, TypeApply: 4403605, DefDef: 3031461, AppliedTypeTree: 2438165, ClassDef: 1966555, Block: 1432756, ApplyToImplicitArgs: 480760, PackageDef: 469580, If: 445200, SelectFromTypeTree: 373719, Function: 365015, Literal: 319257, This: 285736, TypeTree: 264182, New: 252697, ValDef: 210940, Match: 208281, ModuleDef: 200667, Typed: 181510, TypeBoundsTree: 180603, ApplyImplicitView: 154757, CompoundTypeTree: 136369, Super: 106735, TypeDef: 68079, Assign: 65479, Throw: 33351, Bind: 15651, Try: 13967, LabelDef: 11110, ExistentialTypeTree: 8080, ArrayValue: 5031, SingletonTypeTree: 3954, : 3831, Annotated: 3377, SelectFromArray: 3182, AssignOrNamedArg: 2899, Return: 285)
+[info] #visits by tree node     : List(Select: 164010, Ident: 120172, TypeTree: 112527, Apply: 73327, This: 42596, Block: 39145, DefDef: 37813, Literal: 24077, AppliedTypeTree: 20215, ValDef: 15023, TypeBoundsTree: 12844, New: 11890, TypeApply: 9573, ClassDef: 8799, Super: 8697, Typed: 6943, ApplyToImplicitArgs: 6526, Assign: 6340, If: 5134, Function: 4040, ApplyImplicitView: 3929, : 2729, Throw: 2439, LabelDef: 1451, SelectFromTypeTree: 1222, CompoundTypeTree: 1126, Bind: 1100, Match: 714, TypeDef: 694, PackageDef: 320, ModuleDef: 205, AssignOrNamedArg: 194, ArrayValue: 142, Try: 64, Annotated: 42, ExistentialTypeTree: 41, SingletonTypeTree: 26, Return: 9, SelectFromArray: 8)
+[info] avg micros by tree node  : List(PackageDef: 1467, ModuleDef: 978, TypeApply: 460, SelectFromArray: 397, SelectFromTypeTree: 305, Match: 291, Apply: 223, ClassDef: 223, Try: 218, ExistentialTypeTree: 197, SingletonTypeTree: 152, CompoundTypeTree: 121, AppliedTypeTree: 120, TypeDef: 98, Select: 94, Function: 90, If: 86, Annotated: 80, DefDef: 80, ApplyToImplicitArgs: 73, Ident: 39, ApplyImplicitView: 39, Block: 36, ArrayValue: 35, Return: 31, Typed: 26, New: 21, Bind: 14, ValDef: 14, TypeBoundsTree: 14, AssignOrNamedArg: 14, Throw: 13, Literal: 13, Super: 12, Assign: 10, LabelDef: 7, This: 6, TypeTree: 2, : 1)
+[info] time spent in <:<        : 3352615 spans, 8153635000ns (18.6%)
+[info] time spent in findmember : 734728 spans, 6275326000ns (14.3%)
+[info] time spent in asSeenFrom : 874412 spans, 7211757000ns (16.4%)
+[info] #implicit searches       : 5827
+[info] #tried, plausible, matching, typed, found implicits: 1449909, 312708, 6139, 5395, 4104
+[info] #implicit improves tests : 4455
+[info] #implicit inscope hits   : 2934
+[info] #implicit oftype hits    : 822
+[info] #ctr1                    : 1387362
+[info] #ctr2                    : 108574
+[info] #ctr3                    : 1216629
+[info] #ctr4                    : 1079371
+[info] #counter1                : 0 (0.0%)
+[info] #counter2                : 0 (0.0%)
+[info] #timer1                  : 0 spans, 0ns
+[info] #timer2                  : 0 spans, 0ns
+[info] *** Cumulative statistics at phase erasure
+[info] #created tree nodes  : 35568
+[info] #created tree nodes by type: List()
+[info] #retained nodes          : 10340
+[info] #retained nodes by type  : List(TypeTree: 2037, Select: 1916, Apply: 989, This: 706, DefDef: 702, Ident: 645, ValDef: 608, : 593, Block: 457, Literal: 230, ApplyToImplicitArgs: 211, Template: 206, ClassDef: 206, Super: 205, New: 200, Typed: 200, ApplyImplicitView: 111, TypeApply: 98, PackageDef: 6, ArrayValue: 4, CaseDef: 3, If: 2, Try: 2, Match: 1, Throw: 1, Return: 1)
+[info] #typechecked identifiers : 96565
+[info] #typechecked selections  : 118825
+[info] #typechecked applications: 67755
+[info] #raw type creations      : 11252241
+[info]   of which in failed     : 4966 (0.0%)
+[info]   of which in implicits  : 6646795 (59.1%)
+[info] #unique types            : 55539
+[info] #symbols                 : 118110
+[info]   of which type symbols  : 243633
+[info]   of which class symbols : 92807
+[info] #base type seqs          : 90030
+[info] avg base type seq length : 5.5430303
+[info] #singleton base type seqs: 0
+[info] #compound base type seqs : 41385
+[info] #typeref base type seqs  : 43250
+[info] #findMember ops          : 743275
+[info]   of which in failed     : 2315 (0.3%)
+[info]   of which in implicits  : 151807 (20.4%)
+[info] #notfound member         : 372993
+[info] #multiple member         : 52665
+[info] #asSeenFrom ops          : 883784
+[info] #subtype                 : 3381222
+[info]   of which in failed     : 2211 (0.1%)
+[info]   of which in implicits  : 2251022 (66.6%)
+[info]   of which in app impl   : 2207222 (65.3%)
+[info]   of which in improv     : 13964 (0.4%)
+[info] #sametype                : 245709
+[info] ms type-flow-analysis: 0
+[info] #ctr1                    : 1394372
+[info] #ctr2                    : 108713
+[info] #ctr3                    : 1219868
+[info] #ctr4                    : 1081733
+[info] #counter1                : 0 (0.0%)
+[info] #counter2                : 0 (0.0%)
+[info] #timer1                  : 0 spans, 0ns
+[info] #timer2                  : 0 spans, 0ns
+[info] *** Cumulative statistics at phase cleanup
+[info] #created tree nodes  : 41154
+[info] #created tree nodes by type: List()
+[info] #retained nodes          : 12006
+[info] #retained nodes by type  : List(Select: 2299, TypeTree: 2176, Apply: 1088, This: 913, Ident: 854, ValDef: 790, : 781, DefDef: 614, Block: 451, Literal: 277, New: 247, ApplyToImplicitArgs: 211, Template: 206, ClassDef: 206, Super: 205, Typed: 200, Assign: 167, ApplyImplicitView: 111, TypeApply: 96, If: 49, Throw: 48, PackageDef: 6, ArrayValue: 4, CaseDef: 3, Try: 2, Match: 1, Return: 1)
+[info] #typechecked identifiers : 96780
+[info] #typechecked selections  : 119153
+[info] #typechecked applications: 67858
+[info] #raw type creations      : 11277715
+[info]   of which in failed     : 4966 (0.0%)
+[info]   of which in implicits  : 6646795 (58.9%)
+[info] #unique types            : 56340
+[info] #symbols                 : 120472
+[info]   of which type symbols  : 243689
+[info]   of which class symbols : 92809
+[info] #base type seqs          : 90382
+[info] avg base type seq length : 5.538271
+[info] #singleton base type seqs: 0
+[info] #compound base type seqs : 41590
+[info] #typeref base type seqs  : 43397
+[info] #findMember ops          : 744138
+[info]   of which in failed     : 2315 (0.3%)
+[info]   of which in implicits  : 151807 (20.4%)
+[info] #notfound member         : 373129
+[info] #multiple member         : 52838
+[info] #asSeenFrom ops          : 884193
+[info] #subtype                 : 3384041
+[info]   of which in failed     : 2211 (0.1%)
+[info]   of which in implicits  : 2251022 (66.5%)
+[info]   of which in app impl   : 2207222 (65.2%)
+[info]   of which in improv     : 13964 (0.4%)
+[info] #sametype                : 245818
+[info] ms type-flow-analysis: 0
+[info] #ctr1                    : 1394767
+[info] #ctr2                    : 108713
+[info] #ctr3                    : 1220110
+[info] #ctr4                    : 1081975
+[info] #counter1                : 0 (0.0%)
+[info] #counter2                : 0 (0.0%)
+[info] #timer1                  : 0 spans, 0ns
+[info] #timer2                  : 0 spans, 0ns
+[info] Compilation successful.
+[info]   Post-analysis: 210 classes.
+[info] == scalaz-scalacheck-binding / compile ==
+[info] 
+[info] == scalaz-geo-scalacheck / compile ==
+[info]   Source analysis: 1 new/modified, 0 indirectly invalidated, 0 removed.
+[info] Compiling main sources...
+[info] *** Cumulative statistics at phase parser
+[info] #created tree nodes  : 295
+[info] #created tree nodes by type: List()
+[info] *** Cumulative statistics at phase typer
+[info] #created tree nodes  : 1843
+[info] #created tree nodes by type: List()
+[info] #retained nodes          : 569
+[info] #retained nodes by type  : List(Select: 152, TypeTree: 99, This: 74, Ident: 41, TypeApply: 40, ApplyToImplicitArgs: 29, Apply: 29, ValDef: 22, : 21, DefDef: 14, Block: 12, ApplyImplicitView: 11, Function: 11, Import: 7, PackageDef: 2, Template: 1, Super: 1, Literal: 1, TypeDef: 1, ModuleDef: 1)
+[info] #typechecked identifiers : 96933
+[info] #typechecked selections  : 119291
+[info] #typechecked applications: 67971
+[info] #raw type creations      : 11372630
+[info]   of which in failed     : 4966 (0.0%)
+[info]   of which in implicits  : 6713915 (59.0%)
+[info] #unique types            : 8999
+[info] #symbols                 : 48678
+[info]   of which type symbols  : 268556
+[info]   of which class symbols : 111179
+[info] #base type seqs          : 91998
+[info] avg base type seq length : 5.5555663
+[info] #singleton base type seqs: 0
+[info] #compound base type seqs : 42479
+[info] #typeref base type seqs  : 44035
+[info] #findMember ops          : 753581
+[info]   of which in failed     : 2315 (0.3%)
+[info]   of which in implicits  : 158535 (21.0%)
+[info] #notfound member         : 376304
+[info] #multiple member         : 53017
+[info] #asSeenFrom ops          : 890584
+[info] #subtype                 : 3396203
+[info]   of which in failed     : 2211 (0.1%)
+[info]   of which in implicits  : 2260833 (66.6%)
+[info]   of which in app impl   : 2217033 (65.3%)
+[info]   of which in improv     : 13964 (0.4%)
+[info] #sametype                : 250333
+[info] ms type-flow-analysis: 0
+[info] time spent typechecking  : 4 spans, 44796307000ns (100.0%)
+[info] time classfilereading    : 1624 spans, 3915795000ns (8.7%)
+[info] time spent in implicits  : 5879 spans, 28409365000ns (63.4%)
+[info]     successful in scope  : 4429 spans, 16806656000ns (37.5%)
+[info]         failed in scope  : 4389 spans, 12459451000ns (27.8%)
+[info]      successful of type  : 1863 spans, 8136917000ns (18.2%)
+[info]          failed of type  : 2485 spans, 4660390000ns (10.4%)
+[info]        assembling parts  : 1824 spans, 1066195000ns (2.4%)
+[info]               matchesPT  : 318665 spans, 5283570000ns (11.8%)
+[info] implicit cache hits      : 1072 (37.0%)
+[info] time spent in failed     : 36730 spans, 96754000ns (0.2%)
+[info]        failed apply      : 35823 spans, 0ns (0.0%)
+[info]        failed op=        : 33990 spans, 44366000ns (0.1%)
+[info] micros by tree node      : List(Apply: 16567506, Select: 16030185, Ident: 4860621, TypeApply: 4804506, DefDef: 3093874, AppliedTypeTree: 2443368, ClassDef: 2042791, Block: 1462286, ApplyToImplicitArgs: 496670, PackageDef: 486923, If: 448343, Function: 376375, SelectFromTypeTree: 373719, Literal: 327396, This: 292833, TypeTree: 273956, New: 261894, ValDef: 212610, Match: 208551, ModuleDef: 203423, Typed: 192098, TypeBoundsTree: 181769, ApplyImplicitView: 159117, CompoundTypeTree: 136369, Super: 113062, TypeDef: 68079, Assign: 67896, Throw: 34003, Bind: 15651, Try: 14129, LabelDef: 11186, ExistentialTypeTree: 8080, ArrayValue: 5371, SingletonTypeTree: 3954, : 3837, Annotated: 3377, SelectFromArray: 3182, AssignOrNamedArg: 2899, Return: 355)
+[info] #visits by tree node     : List(Select: 167476, Ident: 121419, TypeTree: 116215, Apply: 75263, This: 44305, Block: 40644, DefDef: 38999, Literal: 24940, AppliedTypeTree: 20255, ValDef: 15262, TypeBoundsTree: 12846, New: 12326, TypeApply: 9716, ClassDef: 9191, Super: 9092, Typed: 7351, ApplyToImplicitArgs: 6890, Assign: 6554, If: 5189, ApplyImplicitView: 4170, Function: 4136, : 2731, Throw: 2488, LabelDef: 1458, SelectFromTypeTree: 1222, CompoundTypeTree: 1126, Bind: 1100, Match: 718, TypeDef: 694, PackageDef: 328, ModuleDef: 206, AssignOrNamedArg: 194, ArrayValue: 150, Try: 67, Annotated: 42, ExistentialTypeTree: 41, SingletonTypeTree: 26, Return: 11, SelectFromArray: 8)
+[info] avg micros by tree node  : List(PackageDef: 1484, ModuleDef: 987, TypeApply: 494, SelectFromArray: 397, SelectFromTypeTree: 305, Match: 290, ClassDef: 222, Apply: 220, Try: 210, ExistentialTypeTree: 197, SingletonTypeTree: 152, CompoundTypeTree: 121, AppliedTypeTree: 120, TypeDef: 98, Select: 95, Function: 90, If: 86, Annotated: 80, DefDef: 79, ApplyToImplicitArgs: 72, Ident: 40, ApplyImplicitView: 38, Block: 35, ArrayValue: 35, Return: 32, Typed: 26, New: 21, Bind: 14, TypeBoundsTree: 14, AssignOrNamedArg: 14, ValDef: 13, Throw: 13, Literal: 13, Super: 12, Assign: 10, LabelDef: 7, This: 6, TypeTree: 2, : 1)
+[info] time spent in <:<        : 3396203 spans, 8382797000ns (18.7%)
+[info] time spent in findmember : 753580 spans, 6499239000ns (14.5%)
+[info] time spent in asSeenFrom : 890584 spans, 7860330000ns (17.5%)
+[info] #implicit searches       : 5879
+[info] #tried, plausible, matching, typed, found implicits: 1464937, 314357, 6236, 5459, 4156
+[info] #implicit improves tests : 4507
+[info] #implicit inscope hits   : 2980
+[info] #implicit oftype hits    : 828
+[info] #ctr1                    : 1400110
+[info] #ctr2                    : 109257
+[info] #ctr3                    : 1224599
+[info] #ctr4                    : 1085918
+[info] #counter1                : 0 (0.0%)
+[info] #counter2                : 0 (0.0%)
+[info] #timer1                  : 0 spans, 0ns
+[info] #timer2                  : 0 spans, 0ns
+[info] *** Cumulative statistics at phase erasure
+[info] #created tree nodes  : 3473
+[info] #created tree nodes by type: List()
+[info] #retained nodes          : 944
+[info] #retained nodes by type  : List(Select: 227, TypeTree: 147, Apply: 122, This: 85, Ident: 64, DefDef: 47, ValDef: 42, : 41, Block: 34, ApplyToImplicitArgs: 29, TypeApply: 23, Template: 12, Super: 12, Literal: 12, ClassDef: 12, New: 11, ApplyImplicitView: 11, Typed: 11, PackageDef: 2)
+[info] #typechecked identifiers : 96987
+[info] #typechecked selections  : 119474
+[info] #typechecked applications: 68145
+[info] #raw type creations      : 11419277
+[info]   of which in failed     : 4966 (0.0%)
+[info]   of which in implicits  : 6713915 (58.8%)
+[info] #unique types            : 13408
+[info] #symbols                 : 65721
+[info]   of which type symbols  : 276436
+[info]   of which class symbols : 113016
+[info] #base type seqs          : 92775
+[info] avg base type seq length : 5.5469575
+[info] #singleton base type seqs: 0
+[info] #compound base type seqs : 42913
+[info] #typeref base type seqs  : 44378
+[info] #findMember ops          : 756820
+[info]   of which in failed     : 2315 (0.3%)
+[info]   of which in implicits  : 158535 (20.9%)
+[info] #notfound member         : 376787
+[info] #multiple member         : 53172
+[info] #asSeenFrom ops          : 893800
+[info] #subtype                 : 3403901
+[info]   of which in failed     : 2211 (0.1%)
+[info]   of which in implicits  : 2260833 (66.4%)
+[info]   of which in app impl   : 2217033 (65.1%)
+[info]   of which in improv     : 13964 (0.4%)
+[info] #sametype                : 251555
+[info] ms type-flow-analysis: 0
+[info] #ctr1                    : 1403297
+[info] #ctr2                    : 109279
+[info] #ctr3                    : 1226176
+[info] #ctr4                    : 1087470
+[info] #counter1                : 0 (0.0%)
+[info] #counter2                : 0 (0.0%)
+[info] #timer1                  : 0 spans, 0ns
+[info] #timer2                  : 0 spans, 0ns
+[info] *** Cumulative statistics at phase cleanup
+[info] #created tree nodes  : 3654
+[info] #created tree nodes by type: List()
+[info] #retained nodes          : 948
+[info] #retained nodes by type  : List(Select: 228, TypeTree: 147, Apply: 122, This: 86, Ident: 64, DefDef: 47, : 42, ValDef: 42, Block: 34, ApplyToImplicitArgs: 29, TypeApply: 23, Template: 12, Literal: 12, Super: 12, ClassDef: 12, New: 11, ApplyImplicitView: 11, Typed: 11, PackageDef: 2, Assign: 1)
+[info] #typechecked identifiers : 96987
+[info] #typechecked selections  : 119475
+[info] #typechecked applications: 68145
+[info] #raw type creations      : 11439724
+[info]   of which in failed     : 4966 (0.0%)
+[info]   of which in implicits  : 6713915 (58.7%)
+[info] #unique types            : 14387
+[info] #symbols                 : 68249
+[info]   of which type symbols  : 276822
+[info]   of which class symbols : 113034
+[info] #base type seqs          : 92903
+[info] avg base type seq length : 5.544729
+[info] #singleton base type seqs: 0
+[info] #compound base type seqs : 42982
+[info] #typeref base type seqs  : 44437
+[info] #findMember ops          : 757148
+[info]   of which in failed     : 2315 (0.3%)
+[info]   of which in implicits  : 158535 (20.9%)
+[info] #notfound member         : 376805
+[info] #multiple member         : 53173
+[info] #asSeenFrom ops          : 894346
+[info] #subtype                 : 3405007
+[info]   of which in failed     : 2211 (0.1%)
+[info]   of which in implicits  : 2260833 (66.4%)
+[info]   of which in app impl   : 2217033 (65.1%)
+[info]   of which in improv     : 13964 (0.4%)
+[info] #sametype                : 251555
+[info] ms type-flow-analysis: 0
+[info] #ctr1                    : 1403824
+[info] #ctr2                    : 109279
+[info] #ctr3                    : 1226451
+[info] #ctr4                    : 1087745
+[info] #counter1                : 0 (0.0%)
+[info] #counter2                : 0 (0.0%)
+[info] #timer1                  : 0 spans, 0ns
+[info] #timer2                  : 0 spans, 0ns
+[info] Compilation successful.
+[info]   Post-analysis: 13 classes.
+[info] == scalaz-geo-scalacheck / compile ==
+[info] 
+[info] == scalaz-http / compile ==
+[info]   Source analysis: 30 new/modified, 0 indirectly invalidated, 0 removed.
+[info] Compiling main sources...
+[info] *** Cumulative statistics at phase parser
+[info] #created tree nodes  : 16283
+[info] #created tree nodes by type: List()
+[info] *** Cumulative statistics at phase typer
+[info] #created tree nodes  : 47835
+[info] #created tree nodes by type: List()
+[info] #retained nodes          : 22481
+[info] #retained nodes by type  : List(TypeTree: 4712, Select: 3935, Ident: 2239, Apply: 1711, DefDef: 1408, Literal: 1286, This: 1166, : 1097, ValDef: 1085, TypeApply: 1056, Block: 339, ApplyImplicitView: 330, CaseDef: 257, Template: 225, New: 221, TypeDef: 191, Super: 186, Match: 150, ModuleDef: 149, ApplyToImplicitArgs: 139, Function: 119, Throw: 107, Import: 96, PackageDef: 83, ClassDef: 76, Bind: 51, Typed: 39, If: 21, Assign: 6, UnApply: 1)
+[info] #typechecked identifiers : 102617
+[info] #typechecked selections  : 124910
+[info] #typechecked applications: 70828
+[info] #raw type creations      : 12599980
+[info]   of which in failed     : 4966 (0.0%)
+[info]   of which in implicits  : 7670425 (60.9%)
+[info] #unique types            : 69583
+[info] #symbols                 : 96529
+[info]   of which type symbols  : 320567
+[info]   of which class symbols : 136972
+[info] #base type seqs          : 101232
+[info] avg base type seq length : 5.6884384
+[info] #singleton base type seqs: 0
+[info] #compound base type seqs : 45513
+[info] #typeref base type seqs  : 49476
+[info] #findMember ops          : 833673
+[info]   of which in failed     : 2315 (0.3%)
+[info]   of which in implicits  : 187424 (22.5%)
+[info] #notfound member         : 421540
+[info] #multiple member         : 54071
+[info] #asSeenFrom ops          : 955049
+[info] #subtype                 : 3703818
+[info]   of which in failed     : 2211 (0.1%)
+[info]   of which in implicits  : 2510400 (67.8%)
+[info]   of which in app impl   : 2455410 (66.3%)
+[info]   of which in improv     : 17377 (0.5%)
+[info] #sametype                : 290922
+[info] ms type-flow-analysis: 0
+[info] time spent typechecking  : 5 spans, 48849705000ns (100.0%)
+[info] time classfilereading    : 2187 spans, 4653890000ns (9.5%)
+[info] time spent in implicits  : 6623 spans, 30947790000ns (63.4%)
+[info]     successful in scope  : 4994 spans, 17881201000ns (36.6%)
+[info]         failed in scope  : 4940 spans, 13525310000ns (27.7%)
+[info]      successful of type  : 2124 spans, 8969416000ns (18.4%)
+[info]          failed of type  : 2761 spans, 4911030000ns (10.1%)
+[info]        assembling parts  : 1926 spans, 1263476000ns (2.6%)
+[info]               matchesPT  : 354797 spans, 5888472000ns (12.1%)
+[info] implicit cache hits      : 1328 (40.8%)
+[info] time spent in failed     : 38578 spans, 96754000ns (0.2%)
+[info]        failed apply      : 37650 spans, 0ns (0.0%)
+[info]        failed op=        : 35419 spans, 44366000ns (0.1%)
+[info] micros by tree node      : List(Apply: 18422499, Select: 17162622, Ident: 5224781, TypeApply: 4846969, DefDef: 3158913, AppliedTypeTree: 2505304, ClassDef: 2079363, Block: 1487190, PackageDef: 906180, ApplyToImplicitArgs: 507486, If: 452783, Function: 388873, SelectFromTypeTree: 373719, Literal: 346016, This: 342129, TypeTree: 277568, ModuleDef: 268481, New: 265627, Match: 222627, ValDef: 216700, Typed: 197502, TypeBoundsTree: 183628, ApplyImplicitView: 174377, CompoundTypeTree: 136774, Super: 116099, TypeDef: 68169, Assign: 68141, Throw: 35506, Bind: 16331, Try: 14129, LabelDef: 11186, ExistentialTypeTree: 8080, ArrayValue: 5371, SingletonTypeTree: 3954, : 3920, Annotated: 3377, SelectFromArray: 3182, AssignOrNamedArg: 2899, Return: 355)
+[info] #visits by tree node     : List(Select: 175267, Ident: 128723, TypeTree: 119253, Apply: 77567, This: 44794, Block: 41511, DefDef: 40675, Literal: 27187, AppliedTypeTree: 21423, ValDef: 15543, TypeBoundsTree: 13228, New: 12569, TypeApply: 10296, Super: 9301, ClassDef: 9290, Typed: 7424, ApplyToImplicitArgs: 7119, Assign: 6562, If: 5212, ApplyImplicitView: 4815, Function: 4319, : 2770, Throw: 2595, LabelDef: 1458, SelectFromTypeTree: 1222, Bind: 1151, CompoundTypeTree: 1133, Match: 882, TypeDef: 695, PackageDef: 413, ModuleDef: 355, AssignOrNamedArg: 194, ArrayValue: 150, Try: 67, Annotated: 42, ExistentialTypeTree: 41, SingletonTypeTree: 26, Return: 11, SelectFromArray: 8)
+[info] avg micros by tree node  : List(PackageDef: 2194, ModuleDef: 756, TypeApply: 470, SelectFromArray: 397, SelectFromTypeTree: 305, Match: 252, Apply: 237, ClassDef: 223, Try: 210, ExistentialTypeTree: 197, SingletonTypeTree: 152, CompoundTypeTree: 120, AppliedTypeTree: 116, TypeDef: 98, Select: 97, Function: 90, If: 86, Annotated: 80, DefDef: 77, ApplyToImplicitArgs: 71, Ident: 40, ApplyImplicitView: 36, Block: 35, ArrayValue: 35, Return: 32, Typed: 26, New: 21, Bind: 14, AssignOrNamedArg: 14, ValDef: 13, Throw: 13, TypeBoundsTree: 13, Super: 12, Literal: 12, Assign: 10, LabelDef: 7, This: 7, TypeTree: 2, : 1)
+[info] time spent in <:<        : 3703818 spans, 9252045000ns (18.9%)
+[info] time spent in findmember : 833672 spans, 7103511000ns (14.5%)
+[info] time spent in asSeenFrom : 955049 spans, 8763895000ns (17.9%)
+[info] #implicit searches       : 6623
+[info] #tried, plausible, matching, typed, found implicits: 1627193, 349847, 7033, 6171, 4798
+[info] #implicit improves tests : 5242
+[info] #implicit inscope hits   : 3366
+[info] #implicit oftype hits    : 991
+[info] #ctr1                    : 1546145
+[info] #ctr2                    : 129362
+[info] #ctr3                    : 1358716
+[info] #ctr4                    : 1198652
+[info] #counter1                : 0 (0.0%)
+[info] #counter2                : 0 (0.0%)
+[info] #timer1                  : 0 spans, 0ns
+[info] #timer2                  : 0 spans, 0ns
+[info] *** Cumulative statistics at phase erasure
+[info] #created tree nodes  : 98983
+[info] #created tree nodes by type: List()
+[info] #retained nodes          : 31305
+[info] #retained nodes by type  : List(TypeTree: 6439, Select: 5479, Apply: 3727, DefDef: 2249, Ident: 2103, This: 1868, ValDef: 1853, : 1672, Literal: 1441, Block: 1062, TypeApply: 648, New: 571, Template: 409, ClassDef: 409, Super: 338, ApplyImplicitView: 330, Typed: 171, ApplyToImplicitArgs: 138, Throw: 124, If: 102, PackageDef: 83, CaseDef: 45, ArrayValue: 21, ApplyDynamic: 13, Assign: 8, Match: 2)
+[info] #typechecked identifiers : 104559
+[info] #typechecked selections  : 130013
+[info] #typechecked applications: 75787
+[info] #raw type creations      : 12872574
+[info]   of which in failed     : 4966 (0.0%)
+[info]   of which in implicits  : 7670425 (59.6%)
+[info] #unique types            : 78033
+[info] #symbols                 : 130051
+[info]   of which type symbols  : 327954
+[info]   of which class symbols : 138585
+[info] #base type seqs          : 104533
+[info] avg base type seq length : 5.6793933
+[info] #singleton base type seqs: 0
+[info] #compound base type seqs : 47628
+[info] #typeref base type seqs  : 50629
+[info] #findMember ops          : 855713
+[info]   of which in failed     : 2315 (0.3%)
+[info]   of which in implicits  : 187424 (21.9%)
+[info] #notfound member         : 425577
+[info] #multiple member         : 59156
+[info] #asSeenFrom ops          : 968792
+[info] #subtype                 : 3780049
+[info]   of which in failed     : 2211 (0.1%)
+[info]   of which in implicits  : 2510400 (66.4%)
+[info]   of which in app impl   : 2455410 (65.0%)
+[info]   of which in improv     : 17377 (0.5%)
+[info] #sametype                : 314404
+[info] ms type-flow-analysis: 0
+[info] #ctr1                    : 1564748
+[info] #ctr2                    : 132275
+[info] #ctr3                    : 1369881
+[info] #ctr4                    : 1206317
+[info] #counter1                : 0 (0.0%)
+[info] #counter2                : 0 (0.0%)
+[info] #timer1                  : 0 spans, 0ns
+[info] #timer2                  : 0 spans, 0ns
+[info] *** Cumulative statistics at phase cleanup
+[info] #created tree nodes  : 131027
+[info] #created tree nodes by type: List()
+[info] #retained nodes          : 51894
+[info] #retained nodes by type  : List(Select: 11579, TypeTree: 8270, Apply: 5458, Ident: 4499, This: 3780, : 3258, ValDef: 3065, DefDef: 2980, Literal: 2680, Block: 1694, Assign: 777, New: 704, If: 460, TypeApply: 448, Template: 409, ClassDef: 409, Super: 338, ApplyImplicitView: 330, Typed: 184, Throw: 179, ApplyToImplicitArgs: 138, PackageDef: 83, ArrayValue: 60, CaseDef: 58, Return: 26, Bind: 13, Try: 13, Match: 2)
+[info] #typechecked identifiers : 105319
+[info] #typechecked selections  : 133126
+[info] #typechecked applications: 77722
+[info] #raw type creations      : 12913256
+[info]   of which in failed     : 4966 (0.0%)
+[info]   of which in implicits  : 7670425 (59.4%)
+[info] #unique types            : 79315
+[info] #symbols                 : 140548
+[info]   of which type symbols  : 328264
+[info]   of which class symbols : 138644
+[info] #base type seqs          : 105859
+[info] avg base type seq length : 5.644839
+[info] #singleton base type seqs: 0
+[info] #compound base type seqs : 48411
+[info] #typeref base type seqs  : 51172
+[info] #findMember ops          : 873211
+[info]   of which in failed     : 2315 (0.3%)
+[info]   of which in implicits  : 187424 (21.5%)
+[info] #notfound member         : 436183
+[info] #multiple member         : 62125
+[info] #asSeenFrom ops          : 969206
+[info] #subtype                 : 3821098
+[info]   of which in failed     : 2211 (0.1%)
+[info]   of which in implicits  : 2510400 (65.7%)
+[info]   of which in app impl   : 2455410 (64.3%)
+[info]   of which in improv     : 17377 (0.5%)
+[info] #sametype                : 318437
+[info] ms type-flow-analysis: 0
+[info] #ctr1                    : 1570757
+[info] #ctr2                    : 132930
+[info] #ctr3                    : 1374281
+[info] #ctr4                    : 1210062
+[info] #counter1                : 0 (0.0%)
+[info] #counter2                : 0 (0.0%)
+[info] #timer1                  : 0 spans, 0ns
+[info] #timer2                  : 0 spans, 0ns
+[info] Compilation successful.
+[info]   Post-analysis: 511 classes.
+[info] == scalaz-http / compile ==
+[info] 
+[info] == scalaz-test-suite / compile ==
+[info]   Source analysis: 0 new/modified, 0 indirectly invalidated, 0 removed.
+[info] Compiling main sources...
+[info] Nothing to compile.
+[info]   Post-analysis: 0 classes.
+[info] == scalaz-test-suite / compile ==
+[info] 
+[info] == scalaz-example / compile ==
+[info]   Source analysis: 38 new/modified, 0 indirectly invalidated, 0 removed.
+[info] Compiling main sources...
+[info] *** Cumulative statistics at phase parser
+[info] #created tree nodes  : 12421
+[info] #created tree nodes by type: List()
+[info] *** Cumulative statistics at phase typer
+[info] #created tree nodes  : 96413
+[info] #created tree nodes by type: List()
+[info] #retained nodes          : 35126
+[info] #retained nodes by type  : List(Select: 10096, TypeTree: 5754, This: 3929, TypeApply: 3697, Literal: 3125, ApplyToImplicitArgs: 1808, Apply: 1806, Ident: 1697, ApplyImplicitView: 685, ValDef: 584, : 469, DefDef: 383, Function: 188, Block: 187, Import: 105, Template: 78, Super: 75, CaseDef: 75, New: 64, ModuleDef: 51, Bind: 44, PackageDef: 42, Match: 37, Typed: 32, If: 31, TypeDef: 31, ClassDef: 27, Throw: 12, Assign: 8, UnApply: 4, AppliedTypeTree: 2)
+[info] #typechecked identifiers : 108533
+[info] #typechecked selections  : 147088
+[info] #typechecked applications: 84215
+[info] #raw type creations      : 21406986
+[info]   of which in failed     : 11757 (0.1%)
+[info]   of which in implicits  : 15756494 (73.6%)
+[info] #unique types            : 553191
+[info] #symbols                 : 461894
+[info]   of which type symbols  : 523234
+[info]   of which class symbols : 187796
+[info] #base type seqs          : 131585
+[info] avg base type seq length : 5.996291
+[info] #singleton base type seqs: 0
+[info] #compound base type seqs : 55059
+[info] #typeref base type seqs  : 67836
+[info] #findMember ops          : 1012055
+[info]   of which in failed     : 2757 (0.3%)
+[info]   of which in implicits  : 283323 (28.0%)
+[info] #notfound member         : 522896
+[info] #multiple member         : 64290
+[info] #asSeenFrom ops          : 1322320
+[info] #subtype                 : 5383413
+[info]   of which in failed     : 7315 (0.1%)
+[info]   of which in implicits  : 4013231 (74.5%)
+[info]   of which in app impl   : 3928227 (73.0%)
+[info]   of which in improv     : 32939 (0.6%)
+[info] #sametype                : 371083
+[info] ms type-flow-analysis: 0
+[info] time spent typechecking  : 6 spans, 70651525000ns (100.0%)
+[info] time classfilereading    : 2818 spans, 5347988000ns (7.6%)
+[info] time spent in implicits  : 12199 spans, 51236919000ns (72.5%)
+[info]     successful in scope  : 8298 spans, 21456089000ns (30.4%)
+[info]         failed in scope  : 10000 spans, 18799083000ns (26.6%)
+[info]      successful of type  : 6127 spans, 24795678000ns (35.1%)
+[info]          failed of type  : 5574 spans, 6513788000ns (9.2%)
+[info]        assembling parts  : 2725 spans, 1677774000ns (2.4%)
+[info]               matchesPT  : 622069 spans, 8494322000ns (12.0%)
+[info] implicit cache hits      : 5070 (65.0%)
+[info] time spent in failed     : 45749 spans, 113806000ns (0.2%)
+[info]        failed apply      : 44755 spans, 0ns (0.0%)
+[info]        failed op=        : 42118 spans, 60495000ns (0.1%)
+[info] micros by tree node      : List(Apply: 34548439, Select: 22293642, Ident: 5658342, TypeApply: 5323946, DefDef: 3339611, AppliedTypeTree: 2542782, ClassDef: 2293076, Block: 1572116, PackageDef: 913501, ApplyToImplicitArgs: 692572, If: 537666, Literal: 445320, Function: 416426, SelectFromTypeTree: 375663, This: 370606, TypeTree: 295850, ModuleDef: 289374, New: 286949, ValDef: 240136, Match: 233263, ApplyImplicitView: 230160, Typed: 210590, TypeBoundsTree: 185376, CompoundTypeTree: 137262, Super: 124907, Assign: 78740, TypeDef: 68688, Throw: 39320, Bind: 19118, Try: 16461, LabelDef: 11681, ArrayValue: 8984, ExistentialTypeTree: 8080, : 4492, SingletonTypeTree: 3983, Annotated: 3377, AssignOrNamedArg: 3188, SelectFromArray: 3182, ApplyDynamic: 1849, Return: 802)
+[info] #visits by tree node     : List(Select: 206572, Ident: 138557, TypeTree: 130857, Apply: 89215, This: 51856, Block: 46101, DefDef: 44684, Literal: 37316, AppliedTypeTree: 21807, ValDef: 17389, TypeApply: 14788, New: 13660, TypeBoundsTree: 13306, ApplyToImplicitArgs: 11559, Super: 10001, ClassDef: 9878, Typed: 7812, Assign: 7425, ApplyImplicitView: 6805, If: 6088, Function: 4661, : 3233, Throw: 2921, LabelDef: 1645, SelectFromTypeTree: 1232, Bind: 1221, CompoundTypeTree: 1143, Match: 948, TypeDef: 703, PackageDef: 538, ModuleDef: 406, ArrayValue: 231, AssignOrNamedArg: 205, Try: 94, Annotated: 42, ExistentialTypeTree: 41, Return: 37, SingletonTypeTree: 29, ApplyDynamic: 13, SelectFromArray: 8)
+[info] avg micros by tree node  : List(PackageDef: 1697, ModuleDef: 712, SelectFromArray: 397, Apply: 387, TypeApply: 360, SelectFromTypeTree: 304, Match: 246, ClassDef: 232, ExistentialTypeTree: 197, Try: 175, ApplyDynamic: 142, SingletonTypeTree: 137, CompoundTypeTree: 120, AppliedTypeTree: 116, Select: 107, TypeDef: 97, Function: 89, If: 88, Annotated: 80, DefDef: 74, ApplyToImplicitArgs: 59, Ident: 40, ArrayValue: 38, Block: 34, ApplyImplicitView: 33, Typed: 26, New: 21, Return: 21, Bind: 15, AssignOrNamedArg: 15, ValDef: 13, Throw: 13, TypeBoundsTree: 13, Super: 12, Literal: 11, Assign: 10, LabelDef: 7, This: 7, TypeTree: 2, : 1)
+[info] time spent in <:<        : 5383413 spans, 12794290000ns (18.1%)
+[info] time spent in findmember : 1012054 spans, 8043321000ns (11.4%)
+[info] time spent in asSeenFrom : 1322320 spans, 11138588000ns (15.8%)
+[info] #implicit searches       : 12199
+[info] #tried, plausible, matching, typed, found implicits: 3002178, 611652, 17738, 16472, 9657
+[info] #implicit improves tests : 10468
+[info] #implicit inscope hits   : 4398
+[info] #implicit oftype hits    : 4454
+[info] #ctr1                    : 2366360
+[info] #ctr2                    : 222177
+[info] #ctr3                    : 2080414
+[info] #ctr4                    : 1823213
+[info] #counter1                : 0 (0.0%)
+[info] #counter2                : 0 (0.0%)
+[info] #timer1                  : 0 spans, 0ns
+[info] #timer2                  : 0 spans, 0ns
+[info] *** Cumulative statistics at phase erasure
+[info] #created tree nodes  : 193319
+[info] #created tree nodes by type: List()
+[info] #retained nodes          : 55250
+[info] #retained nodes by type  : List(Select: 14757, TypeTree: 7357, Apply: 7056, This: 5432, Literal: 3808, DefDef: 2745, Ident: 2589, ApplyToImplicitArgs: 1808, Block: 1650, ValDef: 1495, : 1206, New: 874, Template: 715, ClassDef: 715, Super: 712, ApplyImplicitView: 681, Typed: 670, TypeApply: 524, ArrayValue: 240, If: 101, PackageDef: 42, Throw: 25, Assign: 22, CaseDef: 18, Match: 6, LabelDef: 2)
+[info] #typechecked identifiers : 110443
+[info] #typechecked selections  : 160690
+[info] #typechecked applications: 95028
+[info] #raw type creations      : 21804194
+[info]   of which in failed     : 11757 (0.1%)
+[info]   of which in implicits  : 15756494 (72.3%)
+[info] #unique types            : 566938
+[info] #symbols                 : 507942
+[info]   of which type symbols  : 531192
+[info]   of which class symbols : 189928
+[info] #base type seqs          : 137017
+[info] avg base type seq length : 5.9720545
+[info] #singleton base type seqs: 0
+[info] #compound base type seqs : 58609
+[info] #typeref base type seqs  : 69269
+[info] #findMember ops          : 1057170
+[info]   of which in failed     : 2757 (0.3%)
+[info]   of which in implicits  : 283323 (26.8%)
+[info] #notfound member         : 534421
+[info] #multiple member         : 73435
+[info] #asSeenFrom ops          : 1340271
+[info] #subtype                 : 5517102
+[info]   of which in failed     : 7315 (0.1%)
+[info]   of which in implicits  : 4013231 (72.7%)
+[info]   of which in app impl   : 3928227 (71.2%)
+[info]   of which in improv     : 32939 (0.6%)
+[info] #sametype                : 402278
+[info] ms type-flow-analysis: 0
+[info] #ctr1                    : 2398074
+[info] #ctr2                    : 226160
+[info] #ctr3                    : 2099200
+[info] #ctr4                    : 1836162
+[info] #counter1                : 0 (0.0%)
+[info] #counter2                : 0 (0.0%)
+[info] #timer1                  : 0 spans, 0ns
+[info] #timer2                  : 0 spans, 0ns
+[info] *** Cumulative statistics at phase cleanup
+[info] #created tree nodes  : 211762
+[info] #created tree nodes by type: List()
+[info] #retained nodes          : 59612
+[info] #retained nodes by type  : List(Select: 15936, TypeTree: 7811, Apply: 7338, This: 6006, Literal: 3844, Ident: 3179, DefDef: 2711, ValDef: 1913, ApplyToImplicitArgs: 1808, : 1647, Block: 1646, New: 919, Template: 715, ClassDef: 715, Super: 712, ApplyImplicitView: 681, Typed: 670, TypeApply: 549, Assign: 320, ArrayValue: 240, If: 131, Throw: 53, PackageDef: 42, CaseDef: 18, Match: 6, LabelDef: 2)
+[info] #typechecked identifiers : 110889
+[info] #typechecked selections  : 161383
+[info] #typechecked applications: 95378
+[info] #raw type creations      : 21856313
+[info]   of which in failed     : 11757 (0.1%)
+[info]   of which in implicits  : 15756494 (72.1%)
+[info] #unique types            : 568881
+[info] #symbols                 : 511899
+[info]   of which type symbols  : 531363
+[info]   of which class symbols : 189928
+[info] #base type seqs          : 137775
+[info] avg base type seq length : 5.9595428
+[info] #singleton base type seqs: 0
+[info] #compound base type seqs : 59041
+[info] #typeref base type seqs  : 69595
+[info] #findMember ops          : 1059072
+[info]   of which in failed     : 2757 (0.3%)
+[info]   of which in implicits  : 283323 (26.8%)
+[info] #notfound member         : 534580
+[info] #multiple member         : 73910
+[info] #asSeenFrom ops          : 1340759
+[info] #subtype                 : 5525650
+[info]   of which in failed     : 7315 (0.1%)
+[info]   of which in implicits  : 4013231 (72.6%)
+[info]   of which in app impl   : 3928227 (71.1%)
+[info]   of which in improv     : 32939 (0.6%)
+[info] #sametype                : 402650
+[info] ms type-flow-analysis: 0
+[info] #ctr1                    : 2399115
+[info] #ctr2                    : 226200
+[info] #ctr3                    : 2099940
+[info] #ctr4                    : 1836862
+[info] #counter1                : 0 (0.0%)
+[info] #counter2                : 0 (0.0%)
+[info] #timer1                  : 0 spans, 0ns
+[info] #timer2                  : 0 spans, 0ns
+[info] Compilation successful.
+[info]   Post-analysis: 752 classes.
+[info] == scalaz-example / compile ==
+[info] 
+[info] == scalaz-full / compile ==
+[info]   Source analysis: 0 new/modified, 0 indirectly invalidated, 0 removed.
+[info] Compiling main sources...
+[info] Nothing to compile.
+[info]   Post-analysis: 0 classes.
+[info] == scalaz-full / compile ==
+[info] 
+[info] == scalaz / compile ==
+[info] == scalaz / compile ==
+[success] Successful.
+[info] 
+[info] Total time: 167 s, completed Jun 12, 2011 12:15:05 AM
+[info] 
+[info] Total session time: 168 s, completed Jun 12, 2011 12:15:05 AM
+[success] Build completed successfully.
+      168.73 real       306.08 user        15.56 sys
