@@ -1,0 +1,7 @@
+ ~/code/scratch/20110613[master*]: scalac29 -d target unapplyseq.scala
+ ~/code/scratch/20110613[master*]: scala29 -classpath target Main
+ ~/code/scratch/20110613[master*]: scala210 -version
+Scala code runner version 2.10.0.r25080-b20110613020237 -- Copyright 2002-2011, LAMP/EPFL
+ ~/code/scratch/20110613[master*]: scala210 -classpath target Main
+java.lang.NoSuchMethodError: scala.collection.Seq$.unapplySeq(Lscala/collection/GenSeq;)Lscala/Some;
+	at Main$delayedInit$body.apply(unapplyseq.scala:2)
