@@ -1,2 +1,5 @@
 target
 out
+project/boot
+.history
+

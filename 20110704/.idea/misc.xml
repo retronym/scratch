@@ -1,0 +1,32 @@
+<project version="4">
+  <component name="DependencyValidationManager">
+    <option value="false" name="SKIP_IMPORT_STATEMENTS"></option>
+  </component>
+  <component name="EntryPointsManager">
+    <entry_points version="2.0"></entry_points>
+  </component>
+  <component IDEtalkID="06D4DDA2858D613271D17962FA7339E7" name="IdProvider"></component>
+  <component name="JavadocGenerationManager">
+    <option name="OUTPUT_DIRECTORY"></option>
+    <option value="protected" name="OPTION_SCOPE"></option>
+    <option value="true" name="OPTION_HIERARCHY"></option>
+    <option value="true" name="OPTION_NAVIGATOR"></option>
+    <option value="true" name="OPTION_INDEX"></option>
+    <option value="true" name="OPTION_SEPARATE_INDEX"></option>
+    <option value="false" name="OPTION_DOCUMENT_TAG_USE"></option>
+    <option value="false" name="OPTION_DOCUMENT_TAG_AUTHOR"></option>
+    <option value="false" name="OPTION_DOCUMENT_TAG_VERSION"></option>
+    <option value="true" name="OPTION_DOCUMENT_TAG_DEPRECATED"></option>
+    <option value="true" name="OPTION_DEPRECATED_LIST"></option>
+    <option value="" name="OTHER_OPTIONS"></option>
+    <option name="HEAP_SIZE"></option>
+    <option name="LOCALE"></option>
+    <option value="true" name="OPEN_IN_BROWSER"></option>
+  </component>
+  <component name="ProjectResources">
+    <default-html-doctype>http://www.w3.org/1999/xhtml</default-html-doctype>
+  </component>
+  <component 
+  project-jdk-type="JavaSDK" project-jdk-name="1.6" jdk-15="true" assert-keyword="true" languageLevel="JDK_1_6" version="2" name="ProjectRootManager">
+</component>
+</project>
