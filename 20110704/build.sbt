@@ -7,6 +7,11 @@
 //  sbt.Resolver.url("typesafe-snapshots", tsUrl)(Patterns(pList, pList, false))
 //}
 
-scalaVersion := "2.9.0-1"
-
-libraryDependencies += "commons-io" % "commons-io" % "1.2"
+//scalaVersion := "2.9.0-1"
+//
+//libraryDependencies += "commons-io" % "commons-io" % "1.2" % "test"
+//
+////ideaBasePackage := Some("com.wizzle")
+//
+//libraryDependencies <+= scalaVersion("org.scala-lang" % "scala-compiler" % _)
+//

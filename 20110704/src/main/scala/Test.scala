@@ -1,6 +1,5 @@
+import java.io.File
 
-
-class Test {
-  Seq()
-
+object Test extends Application {
+  println("the main event in: " + new File(".").getAbsolutePath)
 }
