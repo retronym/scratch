@@ -1,3 +1,4 @@
 package object npe {
-	type ID[X] = X
+	
+	type ID = Int
 }

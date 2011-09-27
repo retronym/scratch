@@ -1,9 +1,9 @@
 package npe
 
-trait M[X[_]]
+trait N[X]
 
 trait IDs {
-	val id = new M[ID] {}
+	val id = new N[ID] {}
 }
 
 object ID extends IDs 
