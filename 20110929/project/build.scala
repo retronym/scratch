@@ -5,7 +5,7 @@ object build extends Build {
   // Setting shared by all projects
   lazy val standardSettings = Defaults.defaultSettings ++ Seq(
     // The `console` analog to `Defaults.mainRunTask` and `Defaults.mainRunMainTask`
-    // It's omission from the standard settings seems to be an oversight. 
+    // Its omission from the standard settings seems to be an oversight. 
     console <<= consoleTask(fullClasspath in Runtime, console)
   )
   
