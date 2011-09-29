@@ -1,0 +1,1 @@
+libraryDependencies += "commons-io" % "commons-io" % "1.2" % "runtime"

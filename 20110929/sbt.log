@@ -1,0 +1,31 @@
+  ~/code/scratch/20110929 sbt
+[info] Loading global plugins from /Users/jason/.sbt11/plugins
+[info] Loading project definition from /Users/jason/code/scratch/20110929/project
+[info] Set current project to root (in build file:/Users/jason/code/scratch/20110929/)
+> inspect b/console               
+[info] Task: Unit
+[info] Description:
+[info] 	Starts the Scala interpreter with the project classes on the classpath.
+[info] Provided by:
+[info] 	{file:/Users/jason/code/scratch/20110929/}b/*:console
+[info] Dependencies:
+[info] 	b/*:compilers(for console)
+[info] 	b/*:initial-commands(for console)
+[info] 	b/*:streams(for console)
+[info] 	b/runtime:full-classpath
+[info] 	b/*:scalac-options(for console)
+[info] Delegates:
+[info] 	b/*:console
+[info] 	{.}/*:console
+[info] 	*/*:console
+[info] Related:
+[info] 	root/test:console
+[info] 	root/*:console
+[info] 	b/test:console
+[info] 	root/compile:console
+[info] 	a/compile:console
+[info] 	b/compile:console
+[info] 	a/test:console
+[info] 	a/*:console
+> show b/runtime:full-classpath
+[info] List(Attributed(/Users/jason/code/scratch/20110929/b/target/scala-2.9.1/classes), Attributed(/Users/jason/code/scratch/20110929/a/target/scala-2.9.1/classes), Attributed(/Users/jason/.sbt11/boot/scala-2.9.1/lib/scala-library.jar), Attributed(/Users/jason/.ivy2/cache/commons-io/commons-io/jars/commons-io-1.2.jar))

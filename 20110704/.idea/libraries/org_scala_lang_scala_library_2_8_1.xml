@@ -4,8 +4,6 @@
       <root url="jar://$PROJECT_DIR$/project/boot/scala-2.8.1/lib/scala-library.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES>
-      <root url="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.8.1-sources.jar!/" />
-    </SOURCES>
+    <SOURCES />
   </library>
 </component>
