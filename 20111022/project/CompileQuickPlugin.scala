@@ -11,8 +11,8 @@ object CompileQuickPlugin extends Plugin {
     scalacOptions in compileQuick <<= scalacOptions,
     // TODO Parser to tab-complete source files
     compileQuick <<= inputTask { (argTask: TaskKey[Seq[String]]) =>
-      (argTask, scalacOptions in compileQuick, Keys.compilers, dependencyClasspath in Compile, 
-        classDirectory in Compile, streams) map { 
+      (argTask, scalacOptions in compileQuick, Keys.compilers, dependencyClasspath in conf, 
+        classDirectory in conf, streams) map { 
           (args: Seq[String], options: Seq[String], c: Compilers, cp, output, s) =>
             val sources = args.map(file)
             // TODO (?) use a different output directory to discard the compiled files
