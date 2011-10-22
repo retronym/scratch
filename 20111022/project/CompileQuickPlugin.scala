@@ -15,6 +15,7 @@ object CompileQuickPlugin extends Plugin {
         classDirectory in Compile, streams) map { 
           (args: Seq[String], options: Seq[String], c: Compilers, cp, output, s) =>
             val sources = args.map(file)
+            // TODO (?) use a different output directory to discard the compiled files
             c.scalac(sources, cp.map(_.data), output, options, noopCallback, 1000, s.log)
         }
     }
