@@ -1,0 +1,22 @@
+[success] Total time: 0 s, completed Oct 22, 2011 9:07:17 AM
+> show sources
+[info] ArrayBuffer(/Users/jason/code/scratch/20111022/hw1.scala, /Users/jason/code/scratch/20111022/hw2.scala)
+[success] Total time: 0 s, completed Oct 22, 2011 9:07:23 AM
+> compile
+[info] Updating {file:/Users/jason/code/scratch/20111022/}scratch...
+[info] Done updating.
+[info] Compiling 2 Scala sources to /Users/jason/code/scratch/20111022/target/scala-2.9.1/classes...
+[success] Total time: 0 s, completed Oct 22, 2011 9:07:27 AM
+> set scalacOptions in compileQuick += "-Xprint:typer" 
+[info] Reapplying settings...
+[info] Set current project to scratch (in build file:/Users/jason/code/scratch/20111022/)
+> compile-quick hw1.scala
+[[syntax trees at end of typer]]// Scala source: hw1.scala
+package <empty> {
+  final object HW1 extends java.lang.Object with ScalaObject {
+    def this(): object HW1 = {
+      HW1.super.this();
+      ()
+    }
+  }
+}
