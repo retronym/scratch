@@ -1,0 +1,15 @@
+Time for functions: 1.22
+Time for functions inline: 0.689
+Time for data: 0.764
+Time for functions: 1.326
+Time for functions inline: 0.548
+Time for data: 0.503
+Time for functions: 1.199
+Time for functions inline: 0.529
+Time for data: 0.511
+Time for functions: 1.161
+Time for functions inline: 0.492
+Time for data: 0.504
+Time for functions: 2.439
+Time for functions inline: 0.526
+Time for data: 0.493
